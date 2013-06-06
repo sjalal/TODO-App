@@ -1,3 +1,3 @@
 class Task < ActiveRecord::Base
-  attr_accessible :description, :complete
+  attr_accessible :complete, :description
 end

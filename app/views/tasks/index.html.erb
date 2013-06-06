@@ -2,6 +2,6 @@
 <%= render 'form' %>
 <ul>
 	<%- @tasks.each do |task| %>
-		<li><%= task.description %></li>
+		<li style = "list-style-type: none;"><input type = "checkbox" ><%= task.description %></li>
 	<% end %>
 </ul>

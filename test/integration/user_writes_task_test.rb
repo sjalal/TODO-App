@@ -5,6 +5,6 @@ class UserWritesTasksTest < ActionDispatch::IntegrationTest
     assert_equal 1, Task.count
     visit '/tasks'    
     # assert_include page.body, "All Posts"
-    assert_include page.body, "First Post!!"
+    assert_include page.body, "First task!!"
   end
 end
