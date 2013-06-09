@@ -1,0 +1,22 @@
+<h2><%= @list.description %></h2>
+
+<ul>
+<% @list.tasks.each do |task| %>
+    <li style = "list-style-type: none;"><input type = "checkbox" >
+	  <%= task.description %>
+	
+	  <%= link_to "Delete", lists_url(task), :method => :delete %>  
+    </li>
+
+<% end %>
+
+</ul>
+
+<%= form_for [@list, @task] do |form| %>
+     <p><%= form.text_field :description %> <%= form.submit %></p>
+
+<% end %>
+
+<hr />
+<%= link_to "Back to all lists", lists_url %>
+
