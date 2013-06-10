@@ -4,7 +4,6 @@ TODOApp::Application.routes.draw do
     resources :tasks
   end
 
-  
   root to: "lists#index"
   # root to: "tasks#index"
   
