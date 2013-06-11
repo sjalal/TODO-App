@@ -2,13 +2,15 @@ TODOApp::Application.routes.draw do
   
   resources :lists do
     resources :tasks
-  end
+  end 
+
+  match 'lists/:list_id/tasks/:id/complete' => 'tasks#complete', :as => :complete_task
 
   root to: "lists#index"
+  
   # root to: "tasks#index"
   
-  # resources :tasks, only: [:index, :new , :create]
-  # resources :tasks
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -62,6 +64,10 @@ TODOApp::Application.routes.draw do
   # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
+
+resources :lists do
+    resources :tasks
+  end
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
