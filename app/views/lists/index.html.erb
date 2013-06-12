@@ -6,7 +6,7 @@
      
      <h2><li><%=list.description %></li></h2>
      
-     <p><%=link_to "Edit", edit_list_path(list) %> | <%= link_to "Delete", list_path(list), :method => :delete %> | <%= link_to "Show tasks", list_path(list) %></p>
+     <p><%=link_to "Edit", edit_list_path(list) %> | <%= link_to "Delete", list_path(list), :confirm => 'Are you sure?', :method => :delete %> | <%= link_to "Show tasks", list_path(list) %></p>
 
 <% end %>
 
