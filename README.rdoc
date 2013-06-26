@@ -1,6 +1,6 @@
 ==A Basic Rails To-Do App
 
-==Purpose
+==Purpose:
 
 This is a learning project for NSS Cohort 2. We are developing our first app on our own.
 Usage:
@@ -11,7 +11,7 @@ This is a standard rails app. To run the tests, use rake. To run the app, use ra
     User can enter task(s)
     User can view list of tasks
 
-ToDo/Project State:
+==ToDo/Project State:
 
     write tests
     create model & migration
@@ -22,13 +22,13 @@ ToDo/Project State:
     edit tasks
     reorder tasks
 
-Changelog:
+==Changelog:
 
 2013-06-05: Started Project
 Author:Shah Jalal
 
 
-License:
+==License:
 
 The MIT License (MIT)
 
