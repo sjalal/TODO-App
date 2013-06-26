@@ -1,11 +1,12 @@
-A Basic Rails To-Do App
-Purpose
+==A Basic Rails To-Do App
+
+==Purpose
 
 This is a learning project for NSS Cohort 2. We are developing our first app on our own.
 Usage:
 
 This is a standard rails app. To run the tests, use rake. To run the app, use rails s.
-Features:
+==Features:
 
     User can enter task(s)
     User can view list of tasks
